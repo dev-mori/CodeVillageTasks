@@ -7,15 +7,28 @@ const items = [
 ];
 
 const sums = items.map((item) => {
+  //mapメソッドにより各週に対して行う処理の開始位置
+
+  //各週の合計点(sum)の定義と初期化
   let sum = 0;
+
+  //以下各週の合計点(sum)の算出法
+
+  // for文を使う方法
   for (let i = 0; i < item.length; i++) {
     sum += item[i];
   }
 
-  item.forEach((chara) => {
-    sum += chara;
+  //forEach文を使う方法;
+  item.forEach((item) => {
+    sum += item;
   });
+
+  //各週の合計点(su,)をmapメソッドにより戻り値として配列(sums)にして返す
   return sum;
+
+  //mapメソッドにより各週に対して行う処理の終了位置
 });
 
+//mapメソッドにより作られた新しい配列(sums)の出力
 console.log(sums); //=> [424, 313, 291, 379]
