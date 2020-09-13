@@ -8,9 +8,9 @@ const items = [
 
 const sums = items.map((item) => {
   let sum = 0;
-  // for (let i = 0; i < item.length; i++) {
-  //   sum += item[i];
-  // }
+  for (let i = 0; i < item.length; i++) {
+    sum += item[i];
+  }
 
   item.forEach((chara) => {
     sum += chara;
