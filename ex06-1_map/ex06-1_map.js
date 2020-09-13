@@ -24,7 +24,7 @@ const sums = items.map((item) => {
     sum += item;
   });
 
-  //各週の合計点(su,)をmapメソッドにより戻り値として配列(sums)にして返す
+  //各週の合計点(sum)をmapメソッドにより戻り値として配列(sums)にして返す
   return sum;
 
   //mapメソッドにより各週に対して行う処理の終了位置
